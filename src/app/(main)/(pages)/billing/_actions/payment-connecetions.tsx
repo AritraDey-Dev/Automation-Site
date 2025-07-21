@@ -2,7 +2,7 @@
 
 import { db } from '@/lib/db'
 import { currentUser } from '@clerk/nextjs'
-//@ts-ignore
+
 export const onPaymentDetails = async () => {
   const user = await currentUser()
 

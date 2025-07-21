@@ -1,4 +1,4 @@
-import { authMiddleware } from "@clerk/nextjs/server";
+import { authMiddleware } from '@clerk/nextjs'
 
 export default authMiddleware({
   publicRoutes: [
@@ -6,7 +6,6 @@ export default authMiddleware({
     '/api/clerk-webhook',
     '/api/drive-activity/notification',
     '/api/payment/success',
-    'sign-in'
   ],
   ignoredRoutes: [
     '/api/auth/callback/discord',
@@ -17,7 +16,12 @@ export default authMiddleware({
   ],
 })
 
-
-export const config={
-    matcher: ['/((?!.+\\.[\\w]+$|_next).*)', '/', '/(api|trpc)(.*)'],
+export const config = {
+  matcher: ['/((?!.+\\.[\\w]+$|_next).*)', '/', '/(api|trpc)(.*)'],
 }
+
+// https://www.googleapis.com/auth/userinfo.email
+// https://www.googleapis.com/auth/userinfo.profile
+// https://www.googleapis.com/auth/drive.activity.readonly
+// https://www.googleapis.com/auth/drive.metadata
+// https://www.googleapis.com/auth/drive.readonly
