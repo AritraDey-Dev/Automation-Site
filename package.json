@@ -45,7 +45,7 @@
     "react-resizable-panels": "^2.0.13",
     "reactflow": "^11.10.4",
     "sonner": "^1.4.3",
-    "stripe": "^14.21.0",
+    "stripe": "^18.3.0",
     "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7",
     "uuid": "^9.0.1",
