@@ -51,7 +51,7 @@
     "uuid": "^9.0.1",
     "vaul": "^0.9.0",
     "zod": "^4.0.5",
-    "zustand": "^5.0.6"
+    "zustand": "^5.0.10"
   },
   "devDependencies": {
     "@types/node": "^24",
